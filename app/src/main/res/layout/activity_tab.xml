@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/colorMainPink"
+        >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_back_white_36dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:paddingLeft="24dp"
+            android:gravity="left|center_vertical"
+            android:textColor="#ffffff"
+            />
+
+        <ImageView
+            android:id="@+id/distance_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_tune_white_36dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            />
+    </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorColor="@color/colorMainPink"
+        android:background="#ffffff"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

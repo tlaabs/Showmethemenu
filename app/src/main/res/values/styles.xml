@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMainPink</item>
+        <item name="colorPrimaryDark">@color/colorMainPink</item>
+        <item name="colorAccent">@color/colorMainPink</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowFixedWidthMinor">100%</item>
+        <item name="windowFixedHeightMajor">40%</item>
+        <item name="colorAccent">@color/colorMainPink</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+</resources>

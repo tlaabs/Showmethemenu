@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--actionbar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainPink"
+
+        android:orientation="vertical">
+        <!--logo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="SHOW ME THE MENU"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:padding="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:id="@+id/location_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/ic_location_on_pink_18dp"
+                    android:backgroundTint="@color/colorMainPink"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    >
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="-"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        />
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--end actionbar-->
+
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+        <!--#1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.33"
+            >
+            <!--item1-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/rice_icon"
+                    android:onClick="itemClicked"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/rice" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rice"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+            <!--item2-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/noodle_icon"
+                    android:onClick="itemClicked"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/noodle" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noodle"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--#2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.33"
+            >
+            <!--item1-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/cafe_icon"
+                    android:onClick="itemClicked"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/cafe" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cafe"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+            <!--item2-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/pizza_icon"
+                    android:onClick="itemClicked"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/pizza" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--#3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.33"
+            >
+            <!--item1-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/chicken_icon"
+                    android:onClick="itemClicked"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/chicken" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+            <!--item2-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/fastfood_icon"
+                    android:onClick="itemClicked"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/fast_food" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fast-Food"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

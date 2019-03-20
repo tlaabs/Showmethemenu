@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="font_path">fonts/comingsoon.ttf</string>
+
+    <string name="category_1">Rice</string>
+    <string name="category_2">Noodle</string>
+    <string name="category_3">Cafe</string>
+    <string name="category_4">Pizza</string>
+    <string name="category_5">Chicken</string>
+    <string name="category_6">Fast-Food</string>
+</resources>
