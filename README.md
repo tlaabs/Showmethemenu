@@ -12,7 +12,7 @@ http://www.gimc.or.kr/hb/portal/sub05_01?articleSeq=5552&boardCode=BDAAAA03&mode
 
 # 주요 기능
 1. 거리 기반 검색  
-위치 정보를 사용하여 30km 이내 한식 매장을 검색할 수 있다.
+위치 정보를 사용하여 30km 이내 한식 음식점을 검색할 수 있다.
 
 2. 리뷰 기능  
 외국인들이 음식점에대한 평가를 할 수 있다.
