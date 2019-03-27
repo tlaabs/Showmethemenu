@@ -6,9 +6,11 @@
 강원정보문화진흥원 :  
 http://www.gimc.or.kr/hb/portal/sub05_01?articleSeq=5552&boardCode=BDAAAA03&mode=readForm
 
-기획서 : 
+기획서 :  
+https://drive.google.com/file/d/1pjvkZIgC-HQ4H0GkcbQ394rgFWlrPFPz/view?usp=sharing
 
-발표 ppt : 
+발표 ppt :  
+https://drive.google.com/file/d/1WIzh5FICFqy6NzZMDZmcbgeITBIPdeP9/view?usp=sharing
 
 # 주요 기능
 1. 거리 기반 검색  
